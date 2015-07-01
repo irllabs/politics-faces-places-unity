@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{34F9181D-8A04-5E37-AE1E-53D35A55235C}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_2;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;CROSS_PLATFORM_INPUT</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\AppLauncher.cs" />
+     <Compile Include="Assets\Plugins\IOSHelper.cs" />
+     <Compile Include="Assets\Plugins\PlaneScaler.cs" />
+     <Compile Include="Assets\Plugins\Syphon.cs" />
+     <Compile Include="Assets\Plugins\SyphonObject\SyphonClientObject.cs" />
+     <Compile Include="Assets\Plugins\SyphonObject\SyphonServerObject.cs" />
+     <Compile Include="Assets\Plugins\SyphonTexture-AdvancedUsers\ControlSurfaceExample.cs" />
+     <Compile Include="Assets\Plugins\SyphonTexture-AdvancedUsers\SyphonClientTextureProjector.cs" />
+     <Compile Include="Assets\Plugins\SyphonTexture-AdvancedUsers\SyphonServerAlphaOne.cs" />
+     <Compile Include="Assets\Plugins\SyphonTexture-AdvancedUsers\SyphonServerTextureCustomResolution.cs" />
+     <Compile Include="Assets\Plugins\SyphonTexture\SyphonClientTexture.cs" />
+     <Compile Include="Assets\Plugins\SyphonTexture\SyphonServerTexture.cs" />
+     <Compile Include="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\AxisTouchButton.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\ButtonHandler.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\Joystick.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\MobileControlRig.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\PlatformSpecific\LeapInput.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\TiltInput.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\TouchPad.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\VirtualInput.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\DoorSet.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\FirstPersonController.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\HandController.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\DebugFinger.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\DebugHand.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\FingerModel.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\HandModel.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\PolyFinger.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\PolyHand.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\RiggedFinger.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\RiggedHand.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\RigidFinger.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\RigidHand.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\SkeletalFinger.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Hands\SkeletalHand.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\LeapFirstPersonControl.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\LeapImageRetriever.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\DoorScript.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\LeapControl.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\ManipulableStatue.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\TurnToFace.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Tools\ToolModel.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\ConfidenceTransparency.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\DisconnectionNotice.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\FitHeightToScreen.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\GrabbableObject.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\GrabbingHand.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\LeapRecorder.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\LeapUnityExtensions.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\MagneticPinch.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\StretchToScreen.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\TriggerDrawing.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <None Include="Assets\Standard Assets\Shaders\LeapIRUndistorted.shader" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
+     <None Include="Assets\Standard Assets\Shaders\LeapIRDistorted.shader" />
+     <None Include="Assets\Standard Assets\Shaders\LeapRGBDistorted.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle AddSmooth.shader" />
+     <None Include="Assets\Resources\SyphonShaders\AlphaTest-BumpSpec01.shader" />
+     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
+     <None Include="Assets\Standard Assets\Shaders\Distort.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle AddBehind.shader" />
+     <None Include="Assets\Standard Assets\Shaders\LeapIRUndistorted_foreground.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle VertexLit Blended.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Alpha-BumpSpec01.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Alpha-ParallaxSpec01.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Alpha-Diffuse01.shader" />
+     <None Include="Assets\Standard Assets\Shaders\RimShading.shader" />
+     <None Include="Assets\Resources\SyphonShaders\AlphaTest-Glossy01.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle MultiplyDouble.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle AddMultiply.shader" />
+     <None Include="Assets\Resources\AlphaOne.shader" />
+     <None Include="Assets\Resources\SyphonShaders\SyphonProjector.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Alpha BlendDepthtestOff.shader" />
+     <None Include="Assets\Resources\SyphonShaders\SyphonSkybox.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Alpha BlendFront.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Resources\SyphonShaders\SyphonNormal-VertexLit.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Alpha-Bumped01.shader" />
+     <None Include="Assets\Resources\SyphonShaders\AlphaTest-Diffuse01.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Alpha-Parallax01.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Alpha-Diffuse02.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Alpha-VertexLit01.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Alpha BlendBumpUseless.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Add.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Premultiply Blend.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Blend.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Multiply.shader" />
+     <None Include="Assets\Plugins\x86\donotdelete.txt" />
+     <None Include="Assets\Resources\SyphonShaders\AlphaTest-Bumped01.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Alpha Blend.shader" />
+     <None Include="Assets\Standard Assets\Shaders\LeapRGBUndistorted.shader" />
+     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Plugins\SystemWipeRecognizerDll.bundle\Contents\MacOS\version.txt" />
+     <None Include="Assets\Resources\SyphonShaders\Particle Alpha Shadow.shader" />
+     <None Include="Assets\Resources\SyphonShaders\Alpha-Glossy01.shader" />
+     <None Include="Assets\Resources\SyphonShaders\AlphaTest-VertexLit.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="LeapCSharp.NET3.5">
+ <HintPath>/Users/ralph/Documents/github/politics-faces-places-unity/PoliticsFaces/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
