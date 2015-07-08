@@ -48,6 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Plugins\AppLauncher.cs" />
      <Compile Include="Assets\Plugins\IOSHelper.cs" />
+     <Compile Include="Assets\Plugins\OSC\OSCBundle.cs" />
+     <Compile Include="Assets\Plugins\OSC\OSCClient.cs" />
+     <Compile Include="Assets\Plugins\OSC\OSCMessage.cs" />
+     <Compile Include="Assets\Plugins\OSC\OSCPacket.cs" />
+     <Compile Include="Assets\Plugins\OSC\OSCServer.cs" />
+     <Compile Include="Assets\Plugins\OSCHandler.cs" />
      <Compile Include="Assets\Plugins\PlaneScaler.cs" />
      <Compile Include="Assets\Plugins\Syphon.cs" />
      <Compile Include="Assets\Plugins\SyphonObject\SyphonClientObject.cs" />
@@ -115,6 +121,7 @@
      <Compile Include="Assets\Standard Assets\Scripts\Utils\StretchToScreen.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Utils\TriggerDrawing.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\oscControl.cs" />
      <Compile Include="Assets\Standard Assets\Utility\ActivateTrigger.cs" />
      <Compile Include="Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
      <Compile Include="Assets\Standard Assets\Utility\AutoMoveAndRotate.cs" />

@@ -2,49 +2,49 @@
 using System.Collections;
 using Leap;
 
-	public class LeapControl : MonoBehaviour 
+public class LeapControl : MonoBehaviour 
+{
+	public float maxSphereRadius = 35f;
+	public int chosenID;
+	public int softChosenID;
+	public bool selected;
+
+	private Controller controller;
+	private Frame frame;
+	private UnityStandardAssets.CrossPlatformInput.LeapFirstPersonControl leapFirstPersonControl;
+	private UnityStandardAssets.Characters.FirstPerson.FirstPersonController firstPersonController;
+
+	// Use this for initialization
+	void Start () 
 	{
-		public float maxSphereRadius = 35f;
-		public int chosenID;
-		public int softChosenID;
-		public bool selected;
-
-		private Controller controller;
-		private Frame frame;
-		private UnityStandardAssets.CrossPlatformInput.LeapFirstPersonControl leapFirstPersonControl;
-		private UnityStandardAssets.Characters.FirstPerson.FirstPersonController firstPersonController;
-
-		// Use this for initialization
-		void Start () 
-		{
-			controller = new Controller ();
-			leapFirstPersonControl = new UnityStandardAssets.CrossPlatformInput.LeapFirstPersonControl ();
-			leapFirstPersonControl.Init(maxSphereRadius);
-			firstPersonController = GameObject.FindGameObjectWithTag("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
-			frame = controller.Frame ();
-		}
+		controller = new Controller ();
+		leapFirstPersonControl = new UnityStandardAssets.CrossPlatformInput.LeapFirstPersonControl ();
+		leapFirstPersonControl.Init(maxSphereRadius);
+		OSCHandler.Instance.Init ();
+		firstPersonController = GameObject.FindGameObjectWithTag("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
+		frame = controller.Frame ();
+	}
 		
-		// Update is called once per frame
-		void Update () 
-		{
-			frame = controller.Frame ();
+	void Update () 
+	{
+		frame = controller.Frame ();
 
-			//check that there are hands are on right side
-			for (int i = 0; i < frame.Hands.Count; i++) 
+		//check that there are hands are on right side
+		for (int i = 0; i < frame.Hands.Count; i++) 
+		{
+			if (Mathf.Abs(frame.Hands[i].Direction.y) <= leapFirstPersonControl.mouseYThreshold)
 			{
-				if (Mathf.Abs(frame.Hands[i].Direction.y) <= leapFirstPersonControl.mouseYThreshold)
-				{
-					firstPersonController.ResetY();
-				}
+				firstPersonController.ResetY();
 			}
-	
-			leapFirstPersonControl.Update (frame, selected);
-			if (leapFirstPersonControl.chosenID != 0) {
-				Select (leapFirstPersonControl.chosenID);
-			}
-			softChosenID = leapFirstPersonControl.softChosenID;
-		print (selected);
 		}
+	
+		leapFirstPersonControl.Update (frame, selected);
+		if (leapFirstPersonControl.chosenID != 0) {
+			Select (leapFirstPersonControl.chosenID);
+		}
+		softChosenID = leapFirstPersonControl.softChosenID;
+		OSCHandler.Instance.SendMessageToClient ("Politics Unity", "/currentFace", 90);
+	}
 
 	public void Select(int chosen) {
 		chosenID = chosen;
@@ -56,8 +56,8 @@ using Leap;
 		selected = false;
 	}
 
-		public Frame GetFrame()
-		{
-			return frame;
-		}
-	}	
+	public Frame GetFrame()
+	{
+		return frame;
+	}
+}	

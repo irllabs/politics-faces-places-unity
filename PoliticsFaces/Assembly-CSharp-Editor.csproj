@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Editor\OSCHelper.cs" />
      <Compile Include="Assets\Editor\SyphonEditor.cs" />
      <Compile Include="Assets\Editor\SyphonHelper.cs" />
      <None Include="Assets\Standard Assets\Shaders\LeapIRUndistorted.shader" />
