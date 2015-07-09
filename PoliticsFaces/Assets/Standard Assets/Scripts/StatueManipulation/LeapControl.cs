@@ -43,7 +43,10 @@ public class LeapControl : MonoBehaviour
 			Select (leapFirstPersonControl.chosenID);
 		}
 		softChosenID = leapFirstPersonControl.softChosenID;
+		chosenID = leapFirstPersonControl.chosenID;
+
 		OSCHandler.Instance.SendMessageToClient ("Politics Unity", "/currentFace", 90);
+		print (chosenID);
 	}
 
 	public void Select(int chosen) {

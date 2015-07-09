@@ -100,7 +100,6 @@ namespace UnityStandardAssets.CrossPlatformInput
 		void DetectFingers(Frame frame, bool selected) {
 
 			softChosenID = 0;
-			chosenID = 0;
 			for (int i = 0; i < frame.Hands.Count; i++) {			
 				Leap.Hand hand = frame.Hands [i];
 				//finger detection

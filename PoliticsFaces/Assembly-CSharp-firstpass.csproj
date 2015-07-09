@@ -86,7 +86,6 @@
      <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\TiltInput.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\TouchPad.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\CrossPlatformInput\VirtualInput.cs" />
-     <Compile Include="Assets\Standard Assets\Scripts\DoorSet.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\HandController.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Hands\DebugFinger.cs" />
@@ -106,8 +105,11 @@
      <Compile Include="Assets\Standard Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\DoorScript.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\DoorSet.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\LeapControl.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\ManipulableStatue.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\PanelScript.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\PanelSet.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\StatueManipulation\TurnToFace.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Tools\ToolModel.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Utils\ConfidenceTransparency.cs" />
